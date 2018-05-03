@@ -42,6 +42,17 @@ namespace WebApiWithJWTAuthentication
                     };
                 });
 
+            // Configure Support for AuthO
+            //services.AddAuthentication(options =>
+            //{
+            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //}).AddJwtBearer(options =>
+            //{
+            //    options.Authority = Configuration["Auth0:Authority"];
+            //    options.Audience = Configuration["Auth0:Audience"];
+            //});
+
             services.AddMvc();
 
             services.AddCors(options =>
