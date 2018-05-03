@@ -55,6 +55,7 @@ namespace WebApiWithJWTAuthentication
 
             services.AddMvc();
 
+            // Add CORS Policy to allow all domains
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
